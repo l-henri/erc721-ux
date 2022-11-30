@@ -23,15 +23,15 @@ To get started using these tokens, I suggest you use the truffle generated ABI a
 - Create a page /fakeBayc
 - Display the name and the total token number (2 pts)
 - Create a button to claim a new token for the current user(2 pts)
-- Create a page /fakeBayc/{token_number}
-- Display the information (image, name and description) referenced in the Metadata URI for token {token number} (2 pts)
-- Show a clean error message on /fakeBayc/{token_number} if the token does not exist (1pt)
+- Create a page /fakeBayc/{tokenId}
+- Display the information (image, name and description) referenced in the Metadata URI for token {tokenId} (2 pts)
+- Show a clean error message on /fakeBayc/{tokenId} if the token does not exist (1pt)
 
 ### Paying through functions
 - Create a page /fakeNefturians
 - Display the minimum token price, and create a button to buy a token (this one needs to be paid for) (2 pts)
-- Create a page /fakeNefturians/{user_address}
-- Display all the tokens {user_address} has (2 pts)
+- Create a page /fakeNefturians/{userAddress}
+- Display all the tokens {userAddress} id's has with nft name and description from metadata and token
 
 ### Calling a minter with a signature
 - Create a page /fakeMeebits
@@ -40,3 +40,5 @@ To get started using these tokens, I suggest you use the truffle generated ABI a
 - Let the user pick a token number that wasn't minted yet
 - use [signature data](claimerV1-tools) to call function `claimAToken()` on [fake meebits claimer](contracts/FakeMeebits.sol) correctly (4 pts)
 
+### Bonus
+- Deploy your static web site (2 pts)
